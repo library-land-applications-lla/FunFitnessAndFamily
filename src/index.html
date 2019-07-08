@@ -9,6 +9,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./styles.css">
 <script src="motion.js"></script>
 </head>
 <body onload="init();">
@@ -30,7 +31,7 @@
       </a>
       <div class="dropdown-menu">
         <a class="dropdown-item" href="./clock.html">Clock Game</a>
-        <a class="dropdown-item" href="#">Game 2</a>
+        <a class="dropdown-item" href="./healthyfood.html">Cauli Eat</a>
         <a class="dropdown-item" href="#">Game 3</a>
       </div>
     </li>
@@ -45,9 +46,8 @@
 </nav>
 </div>
 
-
 <!-- Motion-->
-<div class="mb-100">
+<div class=" mb-100">
 	<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:100%; height:auto;">
 		<canvas id="canvas" width=100% height=auto style="position: absolute;top: 50px; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
 		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:100%; height:auto; position: absolute; left: 0px; top: 50px; display: block;">
@@ -55,8 +55,13 @@
 	</div>
 </div>
 
+ <!-- Fixed Background -->
+
+ <div class="parallax mb-0"></div>
+
+
  <!-- Ebooks-->
-<div class="container" id="Ebooks"style="margin-top:80px;">
+<div class="container" id="Ebooks">
   <h1 class="text-capitalize text-center pt-5 mb-5">Ebooks</h1>
   <hr w-25 mx-auto pt-5>
   <div class="card-columns ">
@@ -124,6 +129,17 @@
 </div>
 </section>
 <hr w-25 mx-auto pt-5>
+
+<!--Video-->
+<section id="Exercise">
+  <div class="container mb-5">
+    <h1 class="text-capitalize text-center pt-5">Kids Educational Video</h1>
+    <hr class="w-25 mx-auto pt-5">
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Z5VMThf0sM4" allowfullscreen></iframe>
+</div>
+</div>
+</section>
 
 
 <!--footer-->
