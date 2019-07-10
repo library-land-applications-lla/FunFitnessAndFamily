@@ -1,0 +1,90 @@
+body
+{
+    background-image: url("earth.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+.navbar
+{
+    overflow: hidden;
+    background-image: url("stars2.jpg");
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.6) 10px 10px 15px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.6) 10px 10px 15px;
+    box-shadow: rgba(0, 0, 0, 0.6) 10px 10px 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.navbar a
+{
+    float: left;
+    color: bisque;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 200px 15px 200px;
+    text-decoration: none;
+}
+.navbar a:hover
+{
+    background-image: url("stars.jpg");
+}
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus
+{
+    background-image: url("stars.jpg");
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+} 
+.dropdown
+{
+    float: center;
+    overflow: hidden;
+}
+.dropdown .dropbtn
+{
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: bisque;
+    padding:  10px 200px 15px 200px;
+    background-color: inherit;
+    margin: 0;
+}
+.dropdown-content
+{
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.6) 10px 10px 15px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.6) 10px 10px 15px;
+    box-shadow: rgba(0, 0, 0, 0.6) 10px 10px 15px;
+    display: none;
+    position: absolute;
+    background-image: url("stars2.jpg");
+    min-width: 160px;
+    z-index: 1;
+}
+.dropdown-content a
+{
+    float: none;
+    color: antiquewhite;
+    padding:  10px 200px 15px 200px;
+    text-decoration: none;
+    display: block;
+}
+.show
+{
+    display: block;
+}
+h1
+{
+    color: antiquewhite;
+    text-align: center;
+}
+p
+{
+    color: antiquewhite; 
+    text-align: center;
+}

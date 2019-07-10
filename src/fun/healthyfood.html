@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fun Fitness and Family</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+  <script src="./healthyfood.js"></script>
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body onload="init();" style="margin:0px;">
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark fixed-top">
+  <!-- Brand -->
+  <a class="navbar-brand" href="./index.html#">Fun, Fitness and Family</a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <!-- Links -->
+  <ul class="navbar-nav ml-auto">
+  	    <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Games
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="./clock.html">Clock Game</a>
+        <a class="dropdown-item" href="./healthyfood.html">Cauli Eat</a>
+        <a class="dropdown-item" href="#">Game 3</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="./index.html#Ebooks">Ebooks</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="./index.html#Yoga">Yoga Images</a>
+    </li>
+  </ul>
+</nav>
+</div>
+<br>
+
+<h1 class="text-capitalize text-center pt-5 mt-10">Cauli Eat</h1>
+<p class="text-center pt-5" style="margin:50px; margin-top: 0px;">
+	Jump and catch cauliflower, make sure you don't catch soda can. More you catch cauliflower, more points
+	you get.
+</p>
+<br>
+<br>
+
+	<!-- Clock-->
+<div class="mb-100 d-flex justify-content-center">
+	<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:100%; height:auto;">
+		<canvas id="canvas" width=100% height=auto style="position: absolute;top: 200px; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:100%; height:auto; position: absolute; left: 0px; top: 200px; display: block;">
+		</div>
+	</div>
+</div>
+<br>
+<hr w-25 mx-auto pt-5>
+<!--footer-->
+<footer >
+  <p class="text-center bg-dark text-white">  © copyright greatmoods 2019  </p>
+</footer>
+</body>
+
+</html>

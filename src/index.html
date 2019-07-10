@@ -1,151 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Fun Fitness and Family</title>
+  <title>Library Land Applications</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="./styles.css">
-<script src="motion.js"></script>
+  <script src="table.js"></script>
 </head>
 <body onload="init();">
 
 <nav class="navbar navbar-expand-sm bg-primary navbar-dark fixed-top">
   <!-- Brand -->
-  <a class="navbar-brand" href="#">Fun, Fitness and Family</a>
+  <a class="navbar-brand" href="#">Libray Land Applications</a>
    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
   <!-- Links -->
-  <ul class="navbar-nav ml-auto">
+  <ul class="navbar-nav ml-20">
   	    <!-- Dropdown -->
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-        Games
+        Applications
       </a>
       <div class="dropdown-menu">
-        <a class="dropdown-item" href="./clock.html">Clock Game</a>
-        <a class="dropdown-item" href="./healthyfood.html">Cauli Eat</a>
-        <a class="dropdown-item" href="#">Game 3</a>
+        <a class="dropdown-item" href="./fun/index.html">Fun Fitness and Family</a>
+        <a class="dropdown-item" href="./space/index.html">Space</a>
+        <a class="dropdown-item" href="#">Zoo</a>
       </div>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#Ebooks">Ebooks</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#Yoga">Yoga Images</a>
-    </li>
-
   </ul>
 </nav>
 </div>
 
 <!-- Motion-->
-<div class=" mb-100">
-	<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:100%; height:auto;">
-		<canvas id="canvas" width=100% height=auto style="position: absolute;top: 50px; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
-		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:100%; height:auto; position: absolute; left: 0px; top: 50px; display: block;">
+<section id="floor" class="pb-5">
+<div class="mb-100 d-flex justify-content-center" >
+	<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:60%; height:auto;">
+		<canvas id="canvas" width=100% height=auto style="position: absolute; top: 45px; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:60%; height:auto; position: absolute; top: 45px; display: block;">
 		</div>
 	</div>
 </div>
-
- <!-- Fixed Background -->
-
- <div class="parallax mb-0"></div>
+</section>
 
 
- <!-- Ebooks-->
-<div class="container" id="Ebooks">
-  <h1 class="text-capitalize text-center pt-5 mb-5">Ebooks</h1>
+
+ <!-- Applications-->
+ <section  id="Ebooks" style="margin-Top:100px">
+  <h1 class="colorTitle text-white text-capitalize text-center bg-primary pt-5 mb-5 pb-5 mt-5">Applications</h1>
   <hr w-25 mx-auto pt-5>
-  <div class="card-columns ">
+  <div class="card-columns container">
+
   <div class="card col-lg-12 col-md-6 col-12" style=" width:400px;">
     <a href="../images/coverpic.jpg"> <img class="card-img-top" src="../images/coverpic.jpg" alt="Book 1" style="width:100%"> </a>
     <div class="card-body">
       <h4 class="card-title">Fun Fitness and Family</h4>
-      <p class="card-text">Ebook that provides information about healthy lifestyle and importance of family</p>
-      <a href="../pdf/internship.pdf" class="btn btn-primary">Download</a>
+      <p class="card-text">Application that is all about healthy lifestyle and importance of family</p>
+      <a href="./fun/index.html" class="btn btn-primary">See more</a>
     </div>
   </div>
+
    <div class="card col-lg-12 col-md-6 col-12" style="width:400px;">
-    <a href="../images/coverpic.jpg"> <img class="card-img-top" src="../images/coverpic.jpg" alt="Book 1" style="width:100%"> </a>
+    <a href="../images/space.jpg"> <img class="card-img-top" src="../images/space.jpg" alt="Book 1" style="width:100%"> </a>
     <div class="card-body">
-      <h4 class="card-title">Other Book?</h4>
-      <p class="card-text">Ebook that provides information about healthy lifestyle and importance of family</p>
-      <a href="../pdf/internship.pdf" class="btn btn-primary">Download</a>
+      <h4 class="card-title">Space</h4>
+      <p class="card-text">Application that is all about Space</p>
+      <a href="./space/index.html" class="btn btn-primary">See more</a>
     </div>
   </div>
+  
    <div class="card col-lg-12 col-md-6 col-12" style="width:400px;">
-    <a href="../images/coverpic.jpg"> <img class="card-img-top" src="../images/coverpic.jpg" alt="Book 1" style="width:100%"> </a>
+    <a href="../images/monkey.jpg"> <img class="card-img-top" src="../images/monkey.jpg" alt="Book 1" style="width:100%"> </a>
     <div class="card-body">
-      <h4 class="card-title">Other Book?</h4>
-      <p class="card-text">Ebook that provides information about healthy lifestyle and importance of family</p>
-      <a href="../pdf/internship.pdf" class="btn btn-primary">Download</a>
+      <h4 class="card-title">Zoo</h4>
+      <p class="card-text">Applcation that is all about animals</p>
+      <a href="../pdf/internship.pdf" class="btn btn-primary">See more</a>
     </div>
   </div>
+
 </div>
+ 	
+ </section>
 
 <hr w-25 mx-auto pt-5>
 
-  <!-- Gallery-->
-<section id="Yoga">
-  <div class="container mb-5">
-    <h1 class="text-capitalize text-center pt-5">Yoga Images</h1>
-    <hr class="w-25 mx-auto pt-5">
-
-    <div class="row">
-      <div class="col-lg-4 col-md-2 col-12 mb-4">
-      <a href="../images/3.jpg"> <img src="../images/3.jpg" class="img-fluid" style="width:57%" /></a>
-      </div>
-
-      <div class="col-lg-4 col-md-2 col-12 mb-4">
-      <a href="../images/2.jpg"> <img src="../images/2.jpg" class="img-fluid"  style="width:57%"/></a>
-      </div>
-
-      <div class="col-lg-4 col-md-2 col-12 mb-4">
-      <a href="../images/5.jpg"> <img src="../images/5.jpg" class="img-fluid" style="width:57%" /></a>
-      </div>
-
-      <div class="col-lg-4 col-md-2 col-12 mb-4">
-      <a href="../images/4.jpg"> <img src="../images/4.jpg" class="img-fluid" style="width:57%" /></a>
-      </div>
-
-      <div class="col-lg-4 col-md-2 col-12 mb-4">
-      <a href="../images/1.jpg"> <img src="../images/1.jpg" class="img-fluid" style="width:57%" /></a>
-      </div>
-
-      <div class="col-lg-4 col-md-2 col-12 mb-4" >
-      <a href="../images/6.jpg"> <img src="../images/6.jpg" class="img-fluid"  style="width:57%"/></a>
-      </div>
-
-    </div>
-
-</div>
-</section>
-<hr w-25 mx-auto pt-5>
-
-<!--Video-->
-<section id="Exercise">
-  <div class="container mb-5">
-    <h1 class="text-capitalize text-center pt-5">Kids Educational Video</h1>
-    <hr class="w-25 mx-auto pt-5">
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Z5VMThf0sM4" allowfullscreen></iframe>
-</div>
-</div>
-</section>
 
 
 <!--footer-->
 <footer>
-  <p class="text-center bg-dark text-white">  © copyright greatmoods 2019  </p>
+  <p class="text-center bg-dark text-white ">  © copyright greatmoods 2019  </p>
 </footer>
-
-</body>
 </html>

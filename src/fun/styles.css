@@ -1,0 +1,42 @@
+
+.parallax {
+   background:url("../images/typorama-750x350.jpg") no-repeat top center;
+   background: transparent url("../images/typorama-750x350.jpg") no-repeat top center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: 100%;
+   height: 350px;
+}
+
+.navbar {
+background: url("../images/navbar.jpg") repeat top left;
+}
+
+.colorTitle  {
+background: url("../images/navbar.jpg") repeat top left;
+}
+
+.dropdown-item {
+background: url("../images/navbar.jpg") repeat top left;
+color: white;
+}
+
+.card-img-top:hover {
+  -ms-transform: scale(1.01); /* IE 9 */
+  -webkit-transform: scale(1.01); /* Safari 3-8 */
+  transform: scale(1.01); 
+}
+
+.img-fluid:hover {
+  -ms-transform: scale(1.01); /* IE 9 */
+  -webkit-transform: scale(1.01); /* Safari 3-8 */
+  transform: scale(1.01); 
+}
+
+@media screen and (max-width: 600px) {
+  .parallax  {
+    visibility: hidden;
+    display: none;
+  }
+}
