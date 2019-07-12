@@ -1,3 +1,10 @@
+@media screen and (max-width: 600px) {
+  .dropdown {
+      float: left;
+    overflow: hidden;
+  }
+}
+
 body
 {
     background-image: url("mercury.jpg");
