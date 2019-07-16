@@ -1,4 +1,3 @@
-
 body
 {
     background-image: url("earth.jpg");
@@ -42,15 +41,6 @@ body
     float: center;
     overflow: hidden;
 }
-
-@media screen and (max-width: 600px) {
-  .dropdown {
-      float: left;
-    overflow: hidden;
-  }
-}
-
-
 .dropdown .dropbtn
 {
     font-size: 16px;

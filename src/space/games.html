@@ -3,12 +3,22 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css"/>
-        <link rel="stylesheet" href="gamesStyle.css"/>
     </head>
-   
+   <style>
+       #quizPic
+        {
+            max-width: 500px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            -moz-border-radius: 25px;
+            -webkit-border-radius: 25px;
+            border-radius: 25px;
+        }
+   </style>
     <body>
         <div class="space">  
-            <div class="navbar">           
+            <div class="navbar" id="nav">           
                 <a href="index.html">Home</a>
                 <a href="games.html">Games</a>
                 <div class="dropdown">
@@ -24,7 +34,9 @@
                         <a href="neptune.html">Neptune</a> 
                     </div>
                 </div>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navbar()">&#9776;</a>
             </div>
+            <script src="navbarMobile.js"></script>
             <script src="dropdown.js"></script>       
         </div>
         <a href="quiz.html"><img src = "quizPhoto.jpg" id = "quizPic"></a>

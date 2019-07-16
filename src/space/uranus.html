@@ -2,11 +2,19 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="uranusStyle.css" rel="stylesheet"/>
+        <link href="style.css" rel="stylesheet"/>
     </head>
+    <style>
+        body
+        {
+            background-image: url("uranus.jpg");
+            background-size: auto;
+            background-repeat: no-repeat;
+        }
+    </style>
     <body>
         <div class="space">  
-                <div class="navbar">           
+                <div class="navbar" id="nav">           
                     <a href="index.html">Home</a>
                     <a href="games.html">Games</a>
                     <div class="dropdown">
@@ -22,7 +30,9 @@
                             <a href="neptune.html">Neptune</a> 
                         </div>
                     </div>
+                    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navbar()">&#9776;</a>
                 </div>
+                <script src="navbarMobile.js"></script>
                 <script src="dropdown.js"></script>       
         </div>
         <h1>The planet Uranus</h1>
