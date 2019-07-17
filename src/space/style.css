@@ -156,5 +156,10 @@ p
     color: antiquewhite; 
     text-align: center;
 }
-
+iframe
+{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
 
