@@ -5,6 +5,9 @@
 	    'host' => 'localhost',
 	    'db_username' => 'root',
 	    'db_password' => '',
-	    'db_name' => 'animals'
+	    'db_name' => 'animals',
+	    'app_root' => '/forest/',
+	    'images_location' => './images/',
+	    'info_location' => 'info/'
     );
 ?>
